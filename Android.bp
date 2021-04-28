@@ -1,0 +1,33 @@
+
+
+java_sdk_library_import {
+    name: "framework-sdkextensions",
+    owner: "google",
+    prefer: false,
+    shared_library: false,
+    apex_available: [
+        "com.android.sdkext",
+        "test_com.android.sdkext",
+    ],
+    public: {
+        jars: ["current/public/framework-sdkextensions.jar"],
+        stub_srcs: ["current/public/framework-sdkextensions.srcjar"],
+        current_api: "current/public/framework-sdkextensions.txt",
+        removed_api: "current/public/framework-sdkextensions-removed.txt",
+        sdk_version: "module_current",
+    },
+    system: {
+        jars: ["current/system/framework-sdkextensions.jar"],
+        stub_srcs: ["current/system/framework-sdkextensions.srcjar"],
+        current_api: "current/system/framework-sdkextensions.txt",
+        removed_api: "current/system/framework-sdkextensions-removed.txt",
+        sdk_version: "module_current",
+    },
+    module_lib: {
+        jars: ["current/module_lib/framework-sdkextensions.jar"],
+        stub_srcs: ["current/module_lib/framework-sdkextensions.srcjar"],
+        current_api: "current/module_lib/framework-sdkextensions.txt",
+        removed_api: "current/module_lib/framework-sdkextensions-removed.txt",
+        sdk_version: "module_current",
+    },
+}
