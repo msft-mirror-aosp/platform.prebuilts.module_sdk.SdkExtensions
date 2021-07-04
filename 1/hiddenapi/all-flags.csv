@@ -7,5 +7,7 @@ Landroid/os/ext/SdkExtensions;->VERSION_CODE_S:I,blocked
 Landroid/os/ext/SdkExtensions;->getAllExtensionVersions()Ljava/util/Map;,sdk,system-api,test-api
 Landroid/os/ext/SdkExtensions;->getExtensionVersion(I)I,sdk,system-api,test-api
 Landroid/os/ext/util/SdkLevel;-><init>()V,blocked
+Landroid/os/ext/util/SdkLevel;->isAtLeastPreReleaseCodename(Ljava/lang/String;)Z,blocked
 Landroid/os/ext/util/SdkLevel;->isAtLeastR()Z,blocked
 Landroid/os/ext/util/SdkLevel;->isAtLeastS()Z,blocked
+Landroid/os/ext/util/SdkLevel;->isAtLeastT()Z,blocked
