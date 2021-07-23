@@ -48,6 +48,7 @@ java_sdk_library_import {
     ],
     licenses: ["sdkextensions-sdk_Android-Apache-2.0@current"],
     shared_library: false,
+    permitted_packages: ["android.os.ext"],
     public: {
         jars: ["sdk_library/public/framework-sdkextensions-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
@@ -81,6 +82,7 @@ java_sdk_library_import {
     ],
     licenses: ["sdkextensions-sdk_Android-Apache-2.0"],
     shared_library: false,
+    permitted_packages: ["android.os.ext"],
     public: {
         jars: ["sdk_library/public/framework-sdkextensions-stubs.jar"],
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
