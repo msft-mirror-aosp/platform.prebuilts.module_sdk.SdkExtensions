@@ -1,14 +1,14 @@
 drops {
   android_build_drop {
-    build_id: "7624795"
+    build_id: "7793037"
     target: "mainline_modules-user"
-    source_file: "mainline-sdks/sdkextensions-sdk-current.zip"
+    source_file: "mainline-sdks/current/com.google.android.sdkext/sdk/sdkextensions-sdk-current.zip"
   }
   dest_file: "current/current.zip"
   version: ""
   version_group: ""
   git_project: "platform/prebuilts/module_sdk/SdkExtensions"
-  git_branch: "sc-dev"
+  git_branch: "sc-qpr1-dev"
   transform: TRANSFORM_UNZIP
   transform_options {
     rename {
