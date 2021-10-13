@@ -53,6 +53,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/public/framework-sdkextensions.txt",
         removed_api: "sdk_library/public/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/public/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -60,6 +61,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/system/framework-sdkextensions.txt",
         removed_api: "sdk_library/system/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/system/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -67,6 +69,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/module-lib/framework-sdkextensions.txt",
         removed_api: "sdk_library/module-lib/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/module-lib/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
 }
@@ -86,6 +89,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/public/framework-sdkextensions.txt",
         removed_api: "sdk_library/public/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/public/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -93,6 +97,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/system/framework-sdkextensions.txt",
         removed_api: "sdk_library/system/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/system/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -100,6 +105,7 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/module-lib/framework-sdkextensions.txt",
         removed_api: "sdk_library/module-lib/framework-sdkextensions-removed.txt",
+        annotations: "sdk_library/module-lib/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
 }
