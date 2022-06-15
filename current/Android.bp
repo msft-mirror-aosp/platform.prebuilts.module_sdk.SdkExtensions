@@ -1,14 +1,5 @@
 // This is auto-generated. DO NOT EDIT.
 
-// Soong config variable stanza added by vendor/google/build/mainline_modules_sdks.py.
-soong_config_module_type_import {
-    from: "packages/modules/common/Android.bp",
-    module_types: [
-        "module_java_sdk_library_import",
-        "module_prebuilt_bootclasspath_fragment",
-    ],
-}
-
 package {
     // A default list here prevents the license LSC from adding its own list which would
     // be unnecessary as every module in the sdk already has its own licenses property.
@@ -22,48 +13,28 @@ prebuilt_bootclasspath_fragment {
     apex_available: ["com.android.sdkext"],
     licenses: ["sdkextensions-sdk_Android-Apache-2.0@current"],
     contents: ["sdkextensions-sdk_framework-sdkextensions@current"],
-    fragments: [
-        {
-            apex: "com.android.art",
-            module: "art-bootclasspath-fragment",
-        },
-    ],
     hidden_api: {
+        stub_flags: "hiddenapi/stub-flags.csv",
         annotation_flags: "hiddenapi/annotation-flags.csv",
         metadata: "hiddenapi/metadata.csv",
         index: "hiddenapi/index.csv",
-        signature_patterns: "hiddenapi/signature-patterns.csv",
-        filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
-        filtered_flags: "hiddenapi/filtered-flags.csv",
+        all_flags: "hiddenapi/all-flags.csv",
     },
 }
 
-module_prebuilt_bootclasspath_fragment {
+prebuilt_bootclasspath_fragment {
     name: "com.android.sdkext-bootclasspath-fragment",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
-    prefer: true,
-    soong_config_variables: {
-        module_build_from_source: {
-            prefer: false,
-        },
-    },
+    prefer: false,
     visibility: ["//packages/modules/SdkExtensions:__subpackages__"],
     apex_available: ["com.android.sdkext"],
     licenses: ["sdkextensions-sdk_Android-Apache-2.0"],
     contents: ["framework-sdkextensions"],
-    fragments: [
-        {
-            apex: "com.android.art",
-            module: "art-bootclasspath-fragment",
-        },
-    ],
     hidden_api: {
+        stub_flags: "hiddenapi/stub-flags.csv",
         annotation_flags: "hiddenapi/annotation-flags.csv",
         metadata: "hiddenapi/metadata.csv",
         index: "hiddenapi/index.csv",
-        signature_patterns: "hiddenapi/signature-patterns.csv",
-        filtered_stub_flags: "hiddenapi/filtered-stub-flags.csv",
-        filtered_flags: "hiddenapi/filtered-flags.csv",
+        all_flags: "hiddenapi/all-flags.csv",
     },
 }
 
@@ -83,7 +54,6 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/public/framework-sdkextensions.txt",
         removed_api: "sdk_library/public/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/public/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -91,7 +61,6 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/system/framework-sdkextensions.txt",
         removed_api: "sdk_library/system/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/system/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -99,20 +68,13 @@ java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/module-lib/framework-sdkextensions.txt",
         removed_api: "sdk_library/module-lib/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/module-lib/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
 }
 
-module_java_sdk_library_import {
+java_sdk_library_import {
     name: "framework-sdkextensions",
-    // Do not prefer prebuilt if the Soong config variable "module_build_from_source" in namespace "ANDROID" is true.
-    prefer: true,
-    soong_config_variables: {
-        module_build_from_source: {
-            prefer: false,
-        },
-    },
+    prefer: false,
     visibility: ["//visibility:public"],
     apex_available: [
         "com.android.sdkext",
@@ -126,7 +88,6 @@ module_java_sdk_library_import {
         stub_srcs: ["sdk_library/public/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/public/framework-sdkextensions.txt",
         removed_api: "sdk_library/public/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/public/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     system: {
@@ -134,7 +95,6 @@ module_java_sdk_library_import {
         stub_srcs: ["sdk_library/system/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/system/framework-sdkextensions.txt",
         removed_api: "sdk_library/system/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/system/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
     module_lib: {
@@ -142,7 +102,6 @@ module_java_sdk_library_import {
         stub_srcs: ["sdk_library/module-lib/framework-sdkextensions.srcjar"],
         current_api: "sdk_library/module-lib/framework-sdkextensions.txt",
         removed_api: "sdk_library/module-lib/framework-sdkextensions-removed.txt",
-        annotations: "sdk_library/module-lib/framework-sdkextensions_annotations.zip",
         sdk_version: "module_current",
     },
 }
