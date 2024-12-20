@@ -13,7 +13,7 @@ apex_contributions_defaults {
 
 prebuilt_bootclasspath_fragment {
     name: "com.android.sdkext-bootclasspath-fragment",
-    visibility: ["//packages/modules/SdkExtensions:__subpackages__"],
+    visibility: ["//visibility:public"],
     apex_available: ["com.android.sdkext"],
     licenses: ["sdkextensions-sdk_Android-Apache-2.0"],
     contents: ["framework-sdkextensions"],
